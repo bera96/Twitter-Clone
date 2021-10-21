@@ -15,7 +15,7 @@
   
 }
 .login-right button{
-    margin-top: 1rem;
+    margin-top: 0.6rem;
     width: 18rem;
     height: 2.3rem;
     background-color: white;
@@ -54,6 +54,9 @@
     color: black;
     font-size: 15px;
     font-weight: 500;
+}
+.buttons{
+    margin-top: 1rem;
 }
 .login-button-with-apple{
     color: black;
@@ -94,6 +97,10 @@
 }
 .login-right-span3 a{
     color: rgb(29, 155, 240);
+    
+}
+.login-right-span3 a:hover{
+    text-decoration: underline;
 }
 .login-right-span4{
     font-size: 15px;
@@ -140,6 +147,17 @@
     left: 12rem;
     
 }
+/* sign up */
+
+.signup-form{
+    position: absolute;
+    width: 25rem;
+    background-color: black;
+    z-index: 99;
+}
+
+ /* footer  */
+
 .footer{
     background-color: black;
     color: white;

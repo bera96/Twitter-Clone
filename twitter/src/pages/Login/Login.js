@@ -5,10 +5,10 @@ import './Login.css'
 function Login() {
     return (
         <div>
+            
             <div className="login-flex" >
             <Background/>
             <Buttons>
-               
             </Buttons>
             </div>
             <Footer></Footer>
