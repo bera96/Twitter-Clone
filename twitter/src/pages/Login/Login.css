@@ -1,0 +1,161 @@
+*{
+    margin:0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+    
+}
+.login-flex{
+    display: flex;
+}
+.login-right{
+    background-color: black;
+    flex: 2;
+  
+}
+.login-right button{
+    margin-top: 1rem;
+    width: 18rem;
+    height: 2.3rem;
+    background-color: white;
+    border:none;
+    border-radius: 6rem  ;
+    cursor: pointer;
+    transition: .3s ;
+    align-items: center;
+
+}
+.login-right button:hover{
+    background-color: rgba(255, 255, 255, 0.9);
+}
+.login-right button:focus{
+    outline: none;
+}
+
+.login-right-container{
+    margin-top: 7rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.login-right-bird{
+    width: 5rem;
+    object-position: -1rem;
+    
+}
+.login-button-with-google{
+    font-size: 15px;
+    font-weight: 500;
+    color: rgb(60, 64, 67);
+    
+}
+.login-button{
+    color: black;
+    font-size: 15px;
+    font-weight: 500;
+}
+.login-button-with-apple{
+    color: black;
+    font-size: 15px;
+    font-weight: 500;
+}
+.login-button-with-apple i{
+   
+    font-size: 20px;
+    padding-right: 0.5rem;
+   
+}
+.login-button-with-google img{
+    
+    padding-right: 0.5rem;
+}
+.login-right-span1{
+    color: rgba(255,255,255,0.8);
+    font-size: 64px;
+    font-weight: 700;
+    margin-top: 2.5rem;
+}   
+.login-right-span2{
+    color: rgba(255,255,255,0.8);
+    font-size: 31px;
+    font-weight: 700;
+    margin-top: 2.5rem;
+}
+.span-with-links1{
+    margin-top: 1rem;
+}
+.span-with-links2{
+    margin-top: 1rem;
+}
+.login-right-span3{
+    font-size: 13px;
+    color: rgb(110, 118, 125);
+}
+.login-right-span3 a{
+    color: rgb(29, 155, 240);
+}
+.login-right-span4{
+    font-size: 15px;
+    color: rgb(217, 217, 217);
+    
+}
+.login-right-span4 a{
+    font-size: 15px;
+    color: rgb(29, 155, 240);
+}
+
+.button-with-icon-container{
+    display: flex;
+}
+.button-with-icon-container img{
+    width: 1rem;
+}
+.login-left{
+    background-color: black;
+    position: relative;
+    width: 68rem;
+    flex: 2;
+   
+    
+   
+    /* width: 70rem; */
+    
+}
+.login-left .background{
+    height: 94.1vh;
+    /* width: 70rem; */
+    object-position: -10rem;
+}
+.background{
+    object-fit: cover;
+    
+    object-position:-5rem ;
+
+}
+.bird{
+    width: 38rem;
+    position: absolute;
+    top: 10rem;
+    left: 12rem;
+    
+}
+.footer{
+    background-color: black;
+    color: white;
+    padding: 1rem 0;
+    
+}
+.footer-list{
+    display: flex;
+    justify-content: center;
+    
+}
+.footer-list a{
+    color: #6e767d;
+    font-size: 13px;
+    padding: 1rem 0.5rem;
+}
+.footer-list a:hover{
+    text-decoration: underline;
+}

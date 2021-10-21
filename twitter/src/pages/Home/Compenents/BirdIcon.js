@@ -1,11 +1,9 @@
 import React from 'react';
 
-function Input() {
+export default function BirdIcon() {
     return (
         <div>
-            Input
+            <p>Hi</p>
         </div>
     );
 }
-
-export default Input;

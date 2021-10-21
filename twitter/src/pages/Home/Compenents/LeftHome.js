@@ -1,11 +1,9 @@
 import React from 'react';
 
-function Input() {
+export default function LeftHome() {
     return (
         <div>
-            Input
+            
         </div>
     );
 }
-
-export default Input;

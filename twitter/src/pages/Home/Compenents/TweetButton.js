@@ -1,11 +1,10 @@
 import React from 'react';
 
-function Input() {
+export default function TweetButton() {
     return (
         <div>
-            Input
+            
         </div>
     );
 }
 
-export default Input;

@@ -1,11 +1,10 @@
 import React from 'react';
 
-function Input() {
+export default function More(props) {
     return (
         <div>
-            Input
+            
         </div>
     );
 }
 
-export default Input;
