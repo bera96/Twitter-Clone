@@ -16,7 +16,7 @@ function Button({ as, type, text, ...props }) {
       <div className="button-with-icon-container">
         <button className={as} {...props}>
           {" "}
-          <i class="fab fa-apple"></i>
+          <i className="fab fa-apple"></i>
           {text}
         </button>
       </div>
