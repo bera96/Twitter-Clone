@@ -1,3 +1,4 @@
+
 ////////////////Left/////////////////////
 
 import { BirdIcon } from "./components/BirdIcon";
@@ -45,3 +46,4 @@ export {
   HomeFooter,
   BottomProfile,
 };
+

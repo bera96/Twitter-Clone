@@ -1,11 +1,9 @@
 import React from 'react';
 
-function Dropdown() {
+export default function BirdIcon() {
     return (
         <div>
-            Dropdown
+            <p>Hi</p>
         </div>
     );
 }
-
-export default Dropdown;

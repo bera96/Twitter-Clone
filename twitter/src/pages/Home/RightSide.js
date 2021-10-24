@@ -1,3 +1,5 @@
+
+
 import React from "react";
 import { Search, Trends, WhoToFollow, HomeFooter } from "./index";
 
@@ -11,3 +13,4 @@ export default function RightSide() {
     </div>
   );
 }
+

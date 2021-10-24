@@ -1,11 +1,10 @@
 import React from 'react';
 
-function Dropdown() {
+export default function Bookmarks() {
     return (
         <div>
-            Dropdown
+            
         </div>
     );
 }
 
-export default Dropdown;

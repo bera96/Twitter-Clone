@@ -1,11 +1,10 @@
 import React from 'react';
 
-function Dropdown() {
+export default function More(props) {
     return (
         <div>
-            Dropdown
+            
         </div>
     );
 }
 
-export default Dropdown;

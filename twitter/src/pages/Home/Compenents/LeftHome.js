@@ -1,11 +1,9 @@
 import React from 'react';
 
-function Dropdown() {
+export default function LeftHome() {
     return (
         <div>
-            Dropdown
+            
         </div>
     );
 }
-
-export default Dropdown;
