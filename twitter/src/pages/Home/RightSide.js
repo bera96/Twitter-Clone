@@ -1,12 +1,16 @@
-import React from 'react';
-import {Profile} from "./index"
 
-function RightSide() {
-    return (
-        <div>
-            <Profile/>
-        </div>
-    );
+
+import React from "react";
+import { Search, Trends, WhoToFollow, HomeFooter } from "./index";
+
+export default function RightSide() {
+  return (
+    <div className="ll">
+      <Search />
+      <Trends />
+      <WhoToFollow />
+      <HomeFooter />
+    </div>
+  );
 }
 
-export default RightSide;
