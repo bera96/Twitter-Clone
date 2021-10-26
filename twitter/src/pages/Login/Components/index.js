@@ -6,6 +6,7 @@ import Footer from "./Footer"
 import Input from "./Input"
 import SignUpForm from "./SignUpForm"
 import Layout from "./Layout"
+import LoginForm from "./LoginForm"
 
 
-export {Background,Buttons,Dropdown,Button,Footer,Input,SignUpForm,Layout}
+export {Background,Buttons,Dropdown,Button,Footer,Input,SignUpForm,Layout,LoginForm}

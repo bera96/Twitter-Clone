@@ -6,6 +6,7 @@
     font-family: 'Roboto', sans-serif;
     
 }
+
 .login-flex{
     display: flex;
 }
@@ -316,6 +317,9 @@
 }
 .name-input{
     margin-top: 1.5rem;
+}
+.password-input{
+    margin-top: 1.2rem;
 }
 .email-input{
     margin-top: 1.2rem;

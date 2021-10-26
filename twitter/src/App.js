@@ -5,6 +5,7 @@ import { HashRouter as Router,Switch,Route } from "react-router-dom";
 import LeftSide from "./pages/Home/LeftSide";
 import MiddleSide from "./pages/Home/MiddleSide";
 import RightSide from "./pages/Home/RightSide";
+import { SignUpForm } from "./pages/Login/Components";
 
 
 
@@ -18,9 +19,11 @@ function App() {
     <div>
       <Switch>
         <Route exact path="/" component={Login}/>
+        <Route path="/signup" component={Login}/>
+        {/* <Route path="/login"/> */}
         
       </Switch>
-      {/* <Login></Login> */}
+    
     </div>
     </Router>
 

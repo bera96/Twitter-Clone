@@ -1,4 +1,5 @@
 import React, { useContext, useEffect, useState } from 'react';
+import { Link } from 'react-router-dom';
 import { BackGroundContext } from '../../../Context/BackGroundContext';
 import { Button } from './index';
 import SignUpForm from './SignUpForm';
@@ -29,7 +30,9 @@ function Buttons({setLayOut}) {
             <div className="buttons">
             <Button as="login-button-with-google" text={clicked?"Google ile oturum açın":"Google ile kaydolun"}></Button>
                 <Button as="login-button-with-apple" text={clicked?"Apple ile giriş yap":"Apple ile kaydol"}></Button>
+                <Link to="/signup">
                 <Button as="login-button" onClick={onClickHandler} text={clicked?"Telefon numarası, e-posta veya kullanıcı adı":"Telefon numarası veya e-posta adresiyle kaydol"}></Button>
+                </Link>
                 {clicked?(<div className="span-with-links2" ><span className="login-right-span4">Henüz bir hesabın yok mu ? <a onClick={(e)=>{e.preventDefault() 
                     setClicked(false) }} href="">Hemen kaydol</a></span></div>):(  <>
                 <div className="span-with-links1" ><span className="login-right-span3" >By signing up, you agree to the <a  target="_blank"rel="noopener noreferrer"href="https://twitter.com/en/tos">Terms of Service</a> and <a target="_blank" rel="noopener noreferrer" href="https://twitter.com/en/privacy">Privacy <br/> Policy</a>, including <a target="_blank" rel="noopener noreferrer"  href="https://help.twitter.com/tr/rules-and-policies/twitter-cookies">Cookie Use</a></span></div>
