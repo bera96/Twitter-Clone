@@ -167,7 +167,7 @@
     border: 1px solid black;
     border-radius:  1rem;
     z-index: 100;
-    top: 8rem;
+    top: 4rem;
     left: 40rem;
    
 }
@@ -370,6 +370,12 @@ select{
 
 .active{
     display: block !important;
+}
+
+/* login */
+
+.login-form{
+    top: 13rem;
 }
  /* footer  */
 
