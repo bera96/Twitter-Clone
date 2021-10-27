@@ -16,23 +16,8 @@ function LoginForm({setLogin,setLayOut}) {
         password:"",
       
     })
-    const onClickHandler=()=>{
-        setLogin(false)
-        setLayOut(false)
-    }
-   const handleSubmit=(e)=>{
-    e.preventDefault()
-    if(!email || !password){
-        return 
-    }
-    dispatch(loginInitiate(email,password))
-    setState({email:"",password:""})
-   }
-    const{email,name,password}=state
-
     const {currentUser} = useSelector(state=>state.user)
     const history=useHistory()
-
     useEffect(()=>{
         
         if(currentUser){
@@ -41,6 +26,27 @@ function LoginForm({setLogin,setLayOut}) {
 
     },[currentUser,history])
     const dispatch=useDispatch()
+    const{email,name,password}=state
+    const onClickHandler=()=>{
+        setLogin(false)
+        setLayOut(false)
+    }
+   const handleSubmit=(e)=>{
+    e.preventDefault()
+    if(!email || !password){
+       return    console.log(email,password)
+    }
+    dispatch(loginInitiate(email,password))
+    setState({email:"",password:""})
+    console.log(email,password)
+   }
+   
+
+    
+    
+    
+    
+    
     return (
         <div>
             <div className="signup-form login-form" >
@@ -55,18 +61,18 @@ function LoginForm({setLogin,setLayOut}) {
                 </div>
             </div>
             <div className="signup-bottom-container">
-            <form >
+            <form onSubmit={handleSubmit} >
                 <div className="signup-title-container"><span className="signup-title">Giriş Yap</span></div>
 
-                <div className="email-input"><Input  signUpEmail={name}  as="signup-input" type="email" name="E-posta" reqired/></div>
+                <div className="email-input"><Input onChange={(e)=>{setState({...state,email:e.target.value})}} signUpEmail={name}  as="signup-input" type="email" name="E-posta" reqired/></div>
                 
-                <div className="password-input"><Input  signUpName={name}  as="signup-input" type="password" name="Şifre" reqired/></div>
+                <div className="password-input"><Input onChange={(e)=>{setState({...state,password:e.target.value})}} signUpName={name}  as="signup-input" type="password" name="Şifre" reqired/></div>
                 
                
                 <div className="signup-next-container" >
-                    <Link to="/login">
-                    <button onClick className="signup-next">Giriş Yap</button>
-                    </Link>
+                    
+                    <button className="signup-next">Giriş Yap</button>
+                   
                 </div>
                 </form>
                     

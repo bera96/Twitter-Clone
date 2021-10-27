@@ -77,7 +77,7 @@ function SignUpForm({setRegister,setLayOut}) {
                 </div>
                 <div className="signup-next-container" >
                    
-                    <button onClick={onClickHandler} className="signup-next">İleri</button>
+                    <button  className="signup-next">İleri</button>
                     
                 </div>
                 </form>
