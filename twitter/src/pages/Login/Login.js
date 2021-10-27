@@ -5,13 +5,14 @@ import './Login.css'
 
 function Login() {
     const [layout,setLayOut]=useState(false)
+    const [clicked,setClicked]=useState(false)
     return (
         <div>
             
             <div className="login-flex" >
-            <Layout layout={layout} />
+            <Layout clicked={clicked} layout={layout} />
             <Background/>
-            <Buttons setLayOut={setLayOut} >
+            <Buttons clicked={clicked} setClicked={setClicked} setLayOut={setLayOut} >
             </Buttons>
             </div>
             <Footer></Footer>

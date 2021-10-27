@@ -5,7 +5,7 @@ import { useContext } from 'react';
 import { BackGroundContext } from '../../../Context/BackGroundContext';
 import { useState } from 'react';
 
-function LoginForm({setLayOut,setRegister}) {
+function LoginForm({setLogin,setLayOut}) {
     const { bird } = useContext(BackGroundContext);
     const [state,setState]=useState({
         email:"",
@@ -14,6 +14,10 @@ function LoginForm({setLayOut,setRegister}) {
         password:"",
         confirmPassword:""
     })
+    const onClickHandler=()=>{
+        setLogin(false)
+        setLayOut(false)
+    }
    
     const{email,name,password,confirmPassword,displayName}=state
     return (
@@ -22,7 +26,7 @@ function LoginForm({setLayOut,setRegister}) {
             <div className="signup-top-flex">
                 <div className="top-f1">
                     <Link to="/">
-                    <i className="fas fa-times signup-close"></i> 
+                    <i onClick={onClickHandler} className="fas fa-times signup-close"></i> 
                     </Link>
                 </div>
                 <div className="top-f2">
@@ -47,7 +51,7 @@ function LoginForm({setLayOut,setRegister}) {
                 </div>
                 <div className="signup-next-container" >
                     <Link to="/login">
-                    <button  className="signup-next">Giriş Yap</button>
+                    <button onClick className="signup-next">Giriş Yap</button>
                     </Link>
                 </div>
                 </form>

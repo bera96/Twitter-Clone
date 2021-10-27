@@ -1,6 +1,6 @@
 import React from 'react';
 
-function Layout({layout}) {
+function Layout({layout,clicked}) {
     
     if(layout===true){
         return(
@@ -8,6 +8,7 @@ function Layout({layout}) {
         )
     
     }
+    
     else{
         return null
     }

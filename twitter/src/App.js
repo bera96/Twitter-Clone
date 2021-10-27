@@ -20,7 +20,7 @@ function App() {
       <Switch>
         <Route exact path="/" component={Login}/>
         <Route path="/signup" component={Login}/>
-        {/* <Route path="/login"/> */}
+        <Route path="/login" component={Login}/>
         
       </Switch>
     
