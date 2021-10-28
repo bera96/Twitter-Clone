@@ -3,12 +3,12 @@
   height: 100vh;
   color: white;
   background-color: #000000;
-  margin-left: 5rem;
+  padding-left: 12.5rem;
 }
 
 .left-side {
   flex-direction: column;
-
+  padding-right: 5rem;
   border: 1px solid black;
   justify-content: flex-end;
 }
@@ -16,7 +16,6 @@
 .middle-side {
   display: flex;
   flex: 2;
-  border: 1px solid black;
 }
 
 .right-side {
@@ -30,12 +29,13 @@
 .bird-icon {
   border: 1px solid black;
   padding: 0.5rem;
-  margin-left: 2.7rem;
 }
 
 .left-home {
   border: 1px solid black;
-  padding: 0.75rem;
+  padding: 1rem;
+  font-size: 20px;
+  font-weight: 400;
 }
 .left-home:hover {
   background-color: #15181c;
@@ -44,7 +44,9 @@
 
 .explore {
   border: 1px solid black;
-  padding: 0.75rem;
+  padding: 1rem;
+  font-size: 20px;
+  font-weight: 400;
 }
 
 .explore:hover {
@@ -54,7 +56,9 @@
 
 .notification {
   border: 1px solid black;
-  padding: 0.75rem;
+  padding: 1rem;
+  font-size: 20px;
+  font-weight: 400;
 }
 
 .notification:hover {
@@ -64,7 +68,9 @@
 
 .messages {
   border: 1px solid black;
-  padding: 0.75rem;
+  padding: 1rem;
+  font-size: 20px;
+  font-weight: 400;
 }
 .messages:hover {
   background-color: #15181c;
@@ -73,7 +79,9 @@
 
 .bookmarks {
   border: 1px solid black;
-  padding: 0.75rem;
+  padding: 1rem;
+  font-size: 20px;
+  font-weight: 400;
 }
 .bookmarks:hover {
   background-color: #15181c;
@@ -82,7 +90,9 @@
 
 .lists {
   border: 1px solid black;
-  padding: 0.75rem;
+  padding: 1rem;
+  font-size: 20px;
+  font-weight: 400;
 }
 
 .lists:hover {
@@ -92,7 +102,9 @@
 
 .profile {
   border: 1px solid black;
-  padding: 0.75rem;
+  padding: 1rem;
+  font-size: 20px;
+  font-weight: 400;
 }
 
 .profile:hover {
@@ -102,7 +114,10 @@
 
 .more {
   border: 1px solid black;
-  padding: 0.75rem;
+  padding: 1rem;
+  font-size: 20px;
+  font-weight: 400;
+  padding-bottom: 2rem;
 }
 .more:hover {
   background-color: #15181c;
@@ -110,12 +125,13 @@
 }
 
 .tweet-button {
-  border: 1px solid black;
   padding: 1rem;
   background-color: #1d9bf0;
   border-radius: 50px;
-  width: 150px;
+  padding: 1rem 5rem;
   text-align: center;
+  font-size: 17px;
+  font-weight: 700;
 }
 .bottom-profile {
   border: 1px solid black;
@@ -134,10 +150,6 @@
   flex-direction: column;
 }
 
-.left-empty {
-  display: flex;
-  flex: 1;
-}
 .aa {
   display: flex;
   flex-direction: column;
@@ -259,12 +271,6 @@
   border-radius: 50px;
   background-color: rgb(32, 35, 39, 1);
   outline: none;
-}
-
-* {
-  font-family: sans-serif;
-  background-color: black;
-  font-size: 20px;
 }
 
 .middle-icons-tweet-button {

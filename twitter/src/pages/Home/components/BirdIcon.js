@@ -5,7 +5,7 @@ export function BirdIcon() {
     <div className="bird-icon">
       <i
         className="fab fa-twitter"
-        style={{ padding: "15px", fontSize: "25px" }}
+        style={{ fontSize: "27px", marginTop: "8px", marginBottom: "8px" }}
       ></i>
     </div>
   );
