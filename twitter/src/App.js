@@ -6,11 +6,17 @@ import LeftSide from "./pages/Home/LeftSide";
 import MiddleSide from "./pages/Home/MiddleSide";
 import RightSide from "./pages/Home/RightSide";
 import { SignUpForm } from "./pages/Login/Components";
+import Home from "./pages/Home/Home";
+import { useSelector } from "react-redux";
 
 
 
 
 function App() {
+
+  const {currentUser}=useSelector(state=>state.user)
+
+  // console.log(currentUser)
 
  
   return (
@@ -21,27 +27,19 @@ function App() {
         <Route exact path="/" component={Login}/>
         <Route path="/signup" component={Login}/>
         <Route path="/login" component={Login}/>
+        <Route path="/home" component={Home}/>
         
       </Switch>
     
     </div>
     </Router>
+  
 
   )
 
   }
 
-  // <div className="home-page">
-  //     <div className="left-side">
-  //       <LeftSide />
-  //     </div>
-  //     <div className="middle-side">
-  //       <MiddleSide />
-  //     </div>
-  //     <div className="right-side">
-  //       <RightSide />
-  //     </div>
-  //   </div>
+
 
 
 export default App;

@@ -18,7 +18,7 @@ function Input({ as, type, text, name,signUpName,signUpEmail, ...props }) {
         }
     }
     const writeError=(errorMessage)=>{
-        console.log(errorMessage)
+        
             return errorMessage
     }
 

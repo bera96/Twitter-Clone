@@ -26,7 +26,7 @@ function Button({ as, type, text, ...props }) {
   if (as === "login-button") {
     if (text.length > 30) {
       const newText = text.slice(0, 34) + "...";
-      console.log(text.slice(0, 34));
+     
       return (
         <button className={as} {...props}>
           {newText}

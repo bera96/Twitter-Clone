@@ -22,6 +22,7 @@ function LoginForm({setLogin,setLayOut}) {
         
         if(currentUser){
             history.push("/")
+            localStorage.setItem("uid",currentUser.uid)
         }
 
     },[currentUser,history])
@@ -34,11 +35,12 @@ function LoginForm({setLogin,setLayOut}) {
    const handleSubmit=(e)=>{
     e.preventDefault()
     if(!email || !password){
-       return    console.log(email,password)
+       return
     }
     dispatch(loginInitiate(email,password))
     setState({email:"",password:""})
-    console.log(email,password)
+    
+   
    }
    
 
@@ -71,7 +73,8 @@ function LoginForm({setLogin,setLayOut}) {
                
                 <div className="signup-next-container" >
                     
-                    <button className="signup-next">Giriş Yap</button>
+                    <button  className="signup-next">Giriş Yap</button>
+                   
                    
                 </div>
                 </form>
