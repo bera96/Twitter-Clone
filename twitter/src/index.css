@@ -1,14 +1,13 @@
 .home-page {
   display: flex;
-  height: 100vh;
   color: white;
   background-color: #000000;
-  
+  padding-left: 12.5rem;
 }
 
 .left-side {
   flex-direction: column;
-
+  padding-right: 5rem;
   border: 1px solid black;
   justify-content: flex-end;
 }
@@ -16,7 +15,6 @@
 .middle-side {
   display: flex;
   flex: 2;
-  border: 1px solid black;
 }
 
 .right-side {
@@ -30,97 +28,145 @@
 .bird-icon {
   border: 1px solid black;
   padding: 0.5rem;
-  margin-left: 2.7rem;
+}
+.bird-icon i{
+
+  padding-right: 3rem;
+  cursor: pointer;
+  
 }
 
 .left-home {
-  border: 1px solid black;
-  padding: 0.75rem;
+  
+  
+  font-size: 20px;
+  font-weight: 400;
+
 }
-.left-home:hover {
+.left-home span{
+  padding: 1rem;
+ 
+}
+.left-home span:hover {
   background-color: #15181c;
   border-radius: 50px;
 }
 
-.explore {
-  border: 1px solid black;
-  padding: 0.75rem;
-}
 
-.explore:hover {
+.explore {
+
+  font-size: 20px;
+  font-weight: 400;
+}
+.explore span{
+  padding: 1rem;
+  color: rgb(217, 217, 217);
+}
+.explore span:hover {
   background-color: #15181c;
   border-radius: 50px;
 }
 
 .notification {
-  border: 1px solid black;
-  padding: 0.75rem;
+  
+  
+  font-size: 20px;
+  font-weight: 400;
 }
-
-.notification:hover {
+.notification span{
+  padding: 1rem;
+}
+.notification span:hover {
   background-color: #15181c;
   border-radius: 50px;
 }
 
 .messages {
-  border: 1px solid black;
-  padding: 0.75rem;
+ 
+  
+  font-size: 20px;
+  font-weight: 400;
 }
-.messages:hover {
+.messages span{
+  padding: 1rem;
+}
+.messages span:hover {
   background-color: #15181c;
   border-radius: 50px;
 }
 
 .bookmarks {
-  border: 1px solid black;
-  padding: 0.75rem;
+ 
+ 
+  font-size: 20px;
+  font-weight: 400;
 }
-.bookmarks:hover {
+.bookmarks span {
+  padding: 1rem;
+}
+.bookmarks span:hover {
   background-color: #15181c;
   border-radius: 50px;
 }
 
+
 .lists {
-  border: 1px solid black;
-  padding: 0.75rem;
+  
+  
+  font-size: 20px;
+  font-weight: 400;
+}
+.lists span{
+  padding: 1rem;
 }
 
-.lists:hover {
+.lists span:hover {
   background-color: #15181c;
   border-radius: 50px;
 }
 
 .profile {
-  border: 1px solid black;
-  padding: 0.75rem;
-}
 
-.profile:hover {
+  
+  font-size: 20px;
+  font-weight: 400;
+}
+.profile span{
+  padding: 1rem;
+}
+.profile span:hover {
   background-color: #15181c;
   border-radius: 50px;
 }
 
 .more {
-  border: 1px solid black;
-  padding: 0.75rem;
+ 
+  
+  font-size: 20px;
+  font-weight: 400;
+  padding-bottom: 2rem;
 }
-.more:hover {
+.more span{
+  padding: 1rem;
+}
+.more span:hover {
   background-color: #15181c;
   border-radius: 50px;
 }
 
 .tweet-button {
-  border: 1px solid black;
   padding: 1rem;
   background-color: #1d9bf0;
   border-radius: 50px;
-  width: 150px;
+  padding: 1rem 5rem;
   text-align: center;
+  font-size: 17px;
+  font-weight: 700;
 }
 .bottom-profile {
   border: 1px solid black;
   padding: 1rem;
-  margin-top: 17rem;
+  margin-top: 14.1rem;
 }
 
 .home-left-top {
@@ -132,12 +178,14 @@
   display: flex;
   flex: 10;
   flex-direction: column;
+  
+}
+.home-left-middle>div {
+  transition: .3s;
+  padding-top: 2rem ;
+ cursor: pointer;
 }
 
-.left-empty {
-  display: flex;
-  flex: 1;
-}
 .aa {
   display: flex;
   flex-direction: column;
@@ -260,12 +308,6 @@
   background-color: rgb(32, 35, 39, 1);
   outline: none;
 }
-
-/* * {
-  font-family: sans-serif;
-  background-color: black;
-  font-size: 20px;
-} */
 
 .middle-icons-tweet-button {
   display: flex;
