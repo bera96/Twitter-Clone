@@ -7,9 +7,22 @@ export default function PProfile() {
   return (
     <div className="home-page">
       <LeftSide />
-      <ProfileCard />
-      <ProfileTweet />
-      <ProfileTweets />
+      <div className="profile-middle">
+        <ProfileCard />
+        <ProfileTweets />
+
+        <ProfileTweets />
+
+        <ProfileTweets />
+
+        <ProfileTweets />
+
+        <ProfileTweets />
+
+        <ProfileTweets />
+
+        <ProfileTweets />
+      </div>
       <RightSide />
     </div>
   );

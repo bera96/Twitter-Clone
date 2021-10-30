@@ -2,12 +2,11 @@
   display: flex;
   color: white;
   background-color: #000000;
-  padding-left: 12.5rem;
+  padding-left: 13.5rem;
 }
 
 .left-side {
   flex-direction: column;
-  padding-right: 5rem;
   border: 1px solid black;
   justify-content: flex-end;
 }
@@ -21,7 +20,6 @@
   display: flex;
   flex: 2;
 
-  border: 1px solid black;
   justify-content: flex-end;
 }
 
@@ -29,127 +27,106 @@
   border: 1px solid black;
   padding: 0.5rem;
 }
-.bird-icon i{
-
+.bird-icon i {
   padding-right: 3rem;
   cursor: pointer;
-  
 }
 
 .left-home {
-  
-  
   font-size: 20px;
   font-weight: 400;
-
 }
-.left-home span{
+.left-home a {
   padding: 1rem;
- 
 }
-.left-home span:hover {
+.left-home a:hover {
   background-color: #15181c;
   border-radius: 50px;
 }
 
-
 .explore {
-
   font-size: 20px;
   font-weight: 400;
 }
-.explore span{
+.explore a {
   padding: 1rem;
   color: rgb(217, 217, 217);
 }
-.explore span:hover {
+.explore a:hover {
   background-color: #15181c;
   border-radius: 50px;
 }
 
 .notification {
-  
-  
   font-size: 20px;
   font-weight: 400;
 }
-.notification span{
+.notification a {
   padding: 1rem;
 }
-.notification span:hover {
+.notification a:hover {
   background-color: #15181c;
   border-radius: 50px;
 }
 
 .messages {
- 
-  
   font-size: 20px;
   font-weight: 400;
 }
-.messages span{
+.messages a {
   padding: 1rem;
 }
-.messages span:hover {
+.messages a:hover {
   background-color: #15181c;
   border-radius: 50px;
 }
 
 .bookmarks {
- 
- 
   font-size: 20px;
   font-weight: 400;
 }
-.bookmarks span {
+.bookmarks a {
   padding: 1rem;
 }
-.bookmarks span:hover {
+.bookmarks a:hover {
   background-color: #15181c;
   border-radius: 50px;
 }
 
-
 .lists {
-  
-  
   font-size: 20px;
   font-weight: 400;
 }
-.lists span{
+.lists a {
   padding: 1rem;
 }
 
-.lists span:hover {
+.lists a:hover {
   background-color: #15181c;
   border-radius: 50px;
 }
 
 .profile {
-
-  
   font-size: 20px;
   font-weight: 400;
 }
-.profile span{
+.profile a {
   padding: 1rem;
 }
-.profile span:hover {
+.profile a:hover {
   background-color: #15181c;
   border-radius: 50px;
 }
 
 .more {
- 
-  
   font-size: 20px;
   font-weight: 400;
   padding-bottom: 2rem;
 }
-.more span{
+.more a {
   padding: 1rem;
 }
-.more span:hover {
+.more a:hover {
   background-color: #15181c;
   border-radius: 50px;
 }
@@ -178,12 +155,11 @@
   display: flex;
   flex: 10;
   flex-direction: column;
-  
 }
-.home-left-middle>div {
-  transition: .3s;
-  padding-top: 2rem ;
- cursor: pointer;
+.home-left-middle > div {
+  transition: 0.3s;
+  padding-top: 2rem;
+  cursor: pointer;
 }
 
 .aa {
@@ -193,7 +169,7 @@
 }
 
 .middle-home {
-  border: 0.1px solid white;
+  border: 0.1px solid rgb(218, 198, 198);
   padding: 1rem;
   font-size: 20px;
 }
@@ -224,47 +200,57 @@
   border: 1px solid black;
   padding: 1rem;
   background-color: #15181c;
-  width: 200px;
+  width: 300px;
+  border-radius: 20px;
+  height: 400px;
+  margin-top: 1rem;
+
+  margin-left: 6rem;
 }
 
 .who-to-follow {
   border: 1px solid black;
   padding: 1rem;
   background-color: #15181c;
-  width: 200px;
+  width: 300px;
+  height: 300px;
+  border-radius: 20px;
+  margin-top: 1rem;
+  margin-left: 6rem;
 }
 
 .home-footer {
   border: 1px solid black;
   padding: 1rem;
   width: 200px;
+  margin-left: 6rem;
 }
 
 .home-middle-top {
   display: flex;
-  flex: 8;
+
   flex-direction: column;
 }
 
 .home-middle-bottom {
   display: flex;
-  flex: 10;
+
   flex-direction: column;
 }
 
 .bb {
   display: flex;
   flex-direction: column;
-  flex: 8;
+  flex: 2;
 }
 
 .middle-tweet-button {
-  border: 1px solid black;
-  padding: 1rem;
   background-color: #1d9bf0;
   border-radius: 50px;
-  width: 100px;
-  text-align: center;
+  width: 80px;
+  height: 35px;
+  align-items: center;
+  display: flex;
 }
 
 .middle-picture-what-happen {
@@ -301,12 +287,12 @@
 
 .chat-search-text {
   height: 40px;
-
-  width: 200px;
-  padding-left: 1.5rem;
+  width: 300px;
+  padding-left: 5rem;
   border-radius: 50px;
   background-color: rgb(32, 35, 39, 1);
   outline: none;
+  margin-left: 6rem;
 }
 
 .middle-icons-tweet-button {
@@ -338,10 +324,113 @@
 
 .search i {
   position: absolute;
+  display: flex;
+  text-align: left;
+  margin-left: 6rem;
   background: none;
   color: rgb(110, 118, 125);
 }
 
 .search input:focus + i {
   color: rgb(29, 155, 240);
+}
+
+.profile-middle {
+  display: flex;
+  flex-direction: column;
+}
+.profile-card {
+  display: flex;
+  flex-direction: column;
+}
+.profile-middle-gray-area {
+  background-color: rgb(47, 51, 54, 1);
+  border: white 1px solid;
+  width: 600px;
+  height: 200px;
+}
+
+.profile-card {
+  display: flex;
+}
+
+.profile-middle-top {
+  background-color: black;
+  border: rgb(110, 118, 125) 1px solid;
+  width: 600px;
+  height: 53px;
+  display: flex;
+  flex-direction: column;
+}
+
+.cc {
+  display: flex;
+  padding: 1rem;
+  cursor: pointer;
+}
+
+.dd {
+  display: flex;
+  flex-direction: column;
+}
+.profile-middle-remain {
+  width: 600px;
+  border: rgb(217, 217, 217) 1px solid;
+  height: 270px;
+}
+
+.profile-clickable a {
+  padding: 1rem;
+}
+
+.profile-clickable a:hover {
+  padding: 1rem;
+  background-color: #15181c;
+}
+
+.profile-middle-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.profile-middle-column span {
+  padding: 1rem;
+}
+
+.setup-profile-button {
+  border: 1px solid white;
+  display: flex;
+  width: 150px;
+  border-radius: 50px;
+  height: 20px;
+  flex-direction: column;
+  text-align: center;
+}
+
+.arrow {
+  border-radius: 50px;
+  background-color: #15181c;
+}
+.profile-tweets {
+  width: 600px;
+  height: 100px;
+  border: 1px solid white;
+  display: flex;
+  flex-direction: column;
+}
+.profile-tweet-icons {
+  display: flex;
+  justify-content: space-around;
+}
+
+.profile-tweets-small-picture {
+  width: 50px;
+  height: 50px;
+  border-radius: 50px;
+  background-color: gray;
+  margin: 1rem;
+}
+.tweet-column {
+  display: flex;
+  flex-direction: column;
 }

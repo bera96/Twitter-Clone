@@ -1,5 +1,5 @@
 import React from "react";
 
 export function ProfileTweet() {
-  return <div>ProfileTweet</div>;
+  return <div className="profile-tweet">ProfileTweet</div>;
 }

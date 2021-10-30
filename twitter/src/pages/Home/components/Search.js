@@ -6,6 +6,7 @@ export function Search(props) {
   };
   return (
     <div className="search">
+      <i class="fas fa-search"></i>
       <input
         className="chat-search-text"
         type="text"
@@ -14,7 +15,6 @@ export function Search(props) {
         onChange={handleChange}
         value={props.value}
       />
-      <i class="fas fa-search"></i>
     </div>
   );
 }

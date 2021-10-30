@@ -16,10 +16,9 @@ export function SendTweet() {
             height: "50px",
             borderRadius: "50px",
             backgroundColor: "#C4C4C4",
-            margin: "1rem",
           }}
         ></div>
-        <p style={{ margin: "1rem" }}>What's happening?</p>
+        <p style={{ margin: "1rem", color: "gray" }}>What's happening?</p>
       </div>
       <div className="middle-icons-tweet-button">
         <div className="middle-icon">
