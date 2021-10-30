@@ -1,5 +1,7 @@
 import firebase from 'firebase'
 import 'firebase/auth'
+import 'firebase/firestore'
+
 
 
 
@@ -19,7 +21,13 @@ const auth=firebase.auth()
 const googleAuthProvider = new firebase.auth.GoogleAuthProvider()
 const emailAuthProvider= new firebase.auth.EmailAuthProvider()
 
-export {auth,googleAuthProvider,emailAuthProvider}
+const ref=firebase.firestore().collection("user")
+
+
+
+export {auth,googleAuthProvider,emailAuthProvider,ref}
+
+
 
 
 

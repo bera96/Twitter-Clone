@@ -23,7 +23,7 @@ export function SendTweet() {
       </div>
       <div className="middle-icons-tweet-button">
         <div className="middle-icon">
-          <i class="far fa-image"></i>
+          <i className="far fa-image"></i>
           <MdGif />
           <BiPoll />
           <BiSmile />

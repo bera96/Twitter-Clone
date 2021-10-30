@@ -14,7 +14,7 @@ export function Search(props) {
         onChange={handleChange}
         value={props.value}
       />
-      <i class="fas fa-search"></i>
+      <i className="fas fa-search"></i>
     </div>
   );
 }

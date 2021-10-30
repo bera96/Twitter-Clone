@@ -1,45 +1,22 @@
-import React from "react";
+import React, { useEffect } from "react";
 
 import Login from "./pages/Login/Login";
-import { HashRouter as Router,Switch,Route } from "react-router-dom";
-import LeftSide from "./pages/Home/LeftSide";
-import MiddleSide from "./pages/Home/MiddleSide";
-import RightSide from "./pages/Home/RightSide";
-import { SignUpForm } from "./pages/Login/Components";
+import { Switch, Route } from "react-router-dom";
 import Home from "./pages/Home/Home";
-import { useSelector } from "react-redux";
-
-
 
 
 function App() {
-
-  const {currentUser}=useSelector(state=>state.user)
-
-  // console.log(currentUser)
-
- 
-  return (
-    
-    <Router>
-    <div>
-      <Switch>
-        <Route exact path="/" component={Login}/>
-        <Route path="/signup" component={Login}/>
-        <Route path="/login" component={Login}/>
-        <Route path="/home" component={Home}/>
-        
-      </Switch>
-    
-    </div>
-    </Router>
   
 
-  )
-
-  }
-
-
-
+  
+  return (
+    <Switch>
+      <Route exact path="/" component={Login} />
+      <Route path="/signup" component={Login} />
+      <Route path="/login" component={Login} />
+      <Route path="/home" component={Home} />
+    </Switch>
+  );
+}
 
 export default App;

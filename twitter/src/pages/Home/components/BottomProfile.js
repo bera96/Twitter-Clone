@@ -1,7 +1,10 @@
 import React from "react";
 import { BiDotsHorizontalRounded } from "react-icons/bi";
 
+
 export function BottomProfile() {
+  
+
   return (
     <div className="bottom-profile">
       {" "}
@@ -16,8 +19,8 @@ export function BottomProfile() {
         }}
       ></div>
       <div className="bottom-profile-text">
-        <p>jane doe</p>
-        <p>@jane_doe</p>
+        <p className="bottom-profile-user">jane doe</p>
+        <p className="bottom-profile-user">@jane_doe</p>
       </div>
       <div className="bottom-profile-icon">
         <BiDotsHorizontalRounded />

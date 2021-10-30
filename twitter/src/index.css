@@ -165,15 +165,30 @@
 }
 .bottom-profile {
   border: 1px solid black;
-  padding: 1rem;
+
   margin-top: 14.1rem;
+  cursor: pointer;
+  transition: .3s;
+}
+.bottom-profile:hover{
+  background-color: #15181c;
+  border-radius: 50px;
 }
 
 .home-left-top {
   width: 100%;
   text-align: center;
 }
-
+.bottom-profile-popup{
+  position: absolute;
+  top: 40rem;
+  left: 12rem;
+  height: 12rem;
+  width: 20rem;
+  border-radius: 1rem;
+ border: 1px solid rgba(0,0,0,0.1);
+  box-shadow: rgb(255 255 255 / 20%) 0px 0px 15px, rgb(255 255 255 / 15%) 0px 0px 3px 1px;
+}
 .home-left-middle {
   display: flex;
   flex: 10;
@@ -292,6 +307,9 @@
 }
 .bottom-profile-text {
   margin: 1rem;
+}
+.bottom-profile-logout{
+  cursor: pointer;
 }
 .ll {
   display: flex;

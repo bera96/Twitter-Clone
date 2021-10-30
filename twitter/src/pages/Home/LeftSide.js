@@ -13,7 +13,7 @@ import {
   BottomProfile,
 } from "./index";
 
-export default function LeftSide() {
+export default function LeftSide({clicked,setClicked}) {
   return (
     <div className="left-outside">
       <div className="aa">
