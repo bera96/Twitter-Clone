@@ -1,21 +1,27 @@
-import React, { useEffect } from "react";
+import React from "react";
 
 import Login from "./pages/Login/Login";
-import { Switch, Route } from "react-router-dom";
+import { HashRouter as Router, Switch, Route } from "react-router-dom";
+
 import Home from "./pages/Home/Home";
 
+import PProfile from "./pages/Profile/PProfile";
 
 function App() {
-  
 
-  
+
   return (
-    <Switch>
-      <Route exact path="/" component={Login} />
-      <Route path="/signup" component={Login} />
-      <Route path="/login" component={Login} />
-      <Route path="/home" component={Home} />
-    </Switch>
+    <Router>
+      <div>
+        <Switch>
+          <Route exact path="/" component={Login} />
+          <Route path="/signup" component={Login} />
+          <Route path="/login" component={Login} />
+          <Route path="/home" component={Home} />
+          <Route path="/profile" component={PProfile} />
+        </Switch>
+      </div>
+    </Router>
   );
 }
 

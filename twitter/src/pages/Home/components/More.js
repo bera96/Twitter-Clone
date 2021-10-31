@@ -3,8 +3,9 @@ import React from "react";
 export function More() {
   return (
     <div className="more">
-      <span><i className="fas fa-ellipsis-h" style={{ paddingRight: "15px" }}></i>More</span>
-      
+      <a>
+        <i class="fas fa-ellipsis-h" style={{ paddingRight: "15px" }}></i>More
+      </a>
     </div>
   );
 }

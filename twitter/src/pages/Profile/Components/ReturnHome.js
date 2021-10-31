@@ -1,5 +1,5 @@
 import React from "react";
 
 export function ReturnHome() {
-  return <div>ReturnHome</div>;
+  return <div className="return-home">ReturnHome</div>;
 }

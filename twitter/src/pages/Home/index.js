@@ -24,6 +24,8 @@ import { Trends } from "./components/Trends";
 import { WhoToFollow } from "./components/WhoToFollow";
 import { HomeFooter } from "./components/HomeFooter";
 import { BottomProfile } from "./components/BottomProfile";
+import { BottomPopUp } from "./components/BottomPopUp";
+
 
 export {
   Bookmarks,
@@ -45,5 +47,7 @@ export {
   WhoToFollow,
   HomeFooter,
   BottomProfile,
+  BottomPopUp
+  
 };
 
