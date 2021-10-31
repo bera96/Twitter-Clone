@@ -54,7 +54,7 @@ function Input({ as, type, text, name,signUpName,signUpEmail, ...props }) {
         <span className="input-name-constrain">0 / 50</span>
         {signUpName==""?<span className={`"${getError({error:"name"})} error"`}>{"Adın nedir ?"}</span>:null}
        
-        <input  className={as} type={type} maxLength="50"{...props}></input>
+        <input className={as} type={type} maxLength="50"{...props}></input>
         
         <span className="input-inner-text">{name}</span>
       </div>

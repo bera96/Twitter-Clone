@@ -1,6 +1,8 @@
 import * as types from '../types'
 import {auth} from '../../Firebase/Firebase'
 
+
+
 const registerStart=()=>({
     type:types.REGISTER_START
 })
@@ -57,6 +59,7 @@ export const loginInitiate=(email,password,)=>{
         auth.signInWithEmailAndPassword(email,password).then(({user})=>{
            
             dispatch(loginSuccess(user))
+            
         }).catch((error)=>{dispatch(loginFail(error.message))})
     }
 }
