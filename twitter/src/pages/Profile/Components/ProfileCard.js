@@ -25,6 +25,7 @@ export function ProfileCard() {
             <span>Joined October 2021</span>
             <span>1 follower 1 follow</span>
           </div>
+
           <a>Tweets</a>
           <a>Tweets & replies</a>
           <a>Media</a>
