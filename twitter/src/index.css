@@ -381,21 +381,64 @@
   display: flex;
 }
 
-.trends {
-  display: flex;
-  justify-content: space-between;
-}
 
 .trends-sentence {
   display: flex;
   align-items: flex-start;
 }
 
-.trends-icon {
+.trends-header{
   display: flex;
-  align-items: flex-end;
+  align-items: center;
+  margin-top: 0.75rem;
 }
-
+.trends-header-text{
+  color: rgb(217, 217, 217);
+  font-size: 20px;
+  font-weight: 800;
+  padding-left: 1rem;
+}
+.trends-options{
+  margin-left: auto;
+  margin-right: 1rem;
+}
+.trend{
+  display: flex;
+  align-items: center;
+  padding: 0.5rem 0;
+  transition: .2s;
+  cursor: pointer;
+}
+.trend:hover{
+  background-color: rgba(255, 255, 255, 0.03);
+}
+.trend-left{
+  padding-left: 1rem;
+}
+.trend-right{
+  margin-left: auto;
+  padding-right: 1rem;
+}
+.trend-categories{
+  color: rgb(110, 118, 125);
+  font-size: 13px;
+  padding: 0.1rem 0;
+}
+.trend-tag{
+  color: rgb(217, 217, 217);
+  font-size: 15px;
+  font-weight: 700;
+  padding: 0.1rem 0
+}
+.trend-tweet-number{
+  color: rgb(110, 118, 125);
+  font-size: 13px;
+  padding: 0.1rem 0
+}
+.trend-ellipsis-holder i {
+  color: rgb(110, 118, 125);
+  font-size: 13px;
+}
 .left-outside {
   display: flex;
 }
