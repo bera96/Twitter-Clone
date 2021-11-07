@@ -34,6 +34,13 @@ function Button({ as, type, text, ...props }) {
       );
     }
   }
+  if(as==="follow-button"){
+    return(
+      <button className={as}{...props}>
+        <span>Follow</span>
+      </button>
+    )
+  }
 }
 
 export default Button;

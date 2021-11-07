@@ -22,8 +22,9 @@ const googleAuthProvider = new firebase.auth.GoogleAuthProvider()
 const emailAuthProvider= new firebase.auth.EmailAuthProvider()
 
 const ref=firebase.firestore().collection("User")
+const toFollowRef=firebase.firestore().collection("toFollow")
 
-export {auth,googleAuthProvider,emailAuthProvider,ref}
+export {auth,googleAuthProvider,emailAuthProvider,ref,toFollowRef}
 
 
 
