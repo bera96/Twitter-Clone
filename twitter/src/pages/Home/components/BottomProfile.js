@@ -21,7 +21,7 @@ export function BottomProfile() {
   useEffect(()=>{
     getUser()
     
-  },[])
+  },[])  
 
   return (
     <div className="bottom-profile">

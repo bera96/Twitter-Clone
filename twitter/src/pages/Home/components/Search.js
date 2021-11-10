@@ -1,9 +1,7 @@
 import React from "react";
 
-export function Search(props) {
-  const handleChange = (event) => {
-    props.onChange(event.target.value);
-  };
+export function Search() {
+ 
   return (
     <div className="search">
       <i class="fas fa-search"></i>
@@ -12,8 +10,7 @@ export function Search(props) {
         type="text"
         name="name"
         placeholder="Search Twitter"
-        onChange={handleChange}
-        value={props.value}
+       
       />
     </div>
   );

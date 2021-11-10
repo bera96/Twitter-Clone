@@ -5,11 +5,13 @@ import RightSide from "./RightSide";
 import { useDispatch, useSelector } from "react-redux";
 import { logoutInitiate } from "../../redux/actions/user";
 import { useHistory } from "react-router";
-import { BottomPopUp } from ".";
+import { BottomAnchorPopUp, BottomPopUp } from ".";
 
 
 function Home() {
   const [clicked, setClicked] = useState(false);
+  const [clickedAnchor,setClickedAnchor]=useState(false)
+
 
   const { currentUser } = useSelector((state) => state.user);
   const dispatch = useDispatch();
@@ -21,17 +23,27 @@ function Home() {
       history.push("/");
     }
   };
-  const onClickHandler = (e) => {
+  const onClickHandler=(e)=>{
     if (
       e.target.className === "bottom-profile" ||
       e.target.className === "bottom-profile-icon" ||
       e.target.className === "bottom-profile-user"
     ) {
       setClicked(true);
+      
     } else {
       setClicked(false);
     }
+    if(e.target.innerHTML==="More ...")
+    {
+      setClickedAnchor(true)
+    }
+    else
+    {
+      setClickedAnchor(false)
+    }
   };
+  
 
 
 
@@ -41,9 +53,9 @@ function Home() {
         {clicked?( <BottomPopUp handleAuth={handleAuth} />  ):(null)}
        
         <LeftSide/>
-        
         <MiddleSide />
         <RightSide />
+        {clickedAnchor?(<BottomAnchorPopUp />):(null)}
         
     </div>
   );

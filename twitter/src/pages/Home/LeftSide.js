@@ -1,4 +1,5 @@
 import React from "react";
+import {Link}  from "react-router-dom"
 import {
   BirdIcon,
   LeftHome,
@@ -18,16 +19,24 @@ export default function LeftSide() {
     <div className="left-outside">
       <div className="aa">
         <div className="home-left-top">
-          <BirdIcon />
+          <Link className="left-bird-anchor" to="/home">
+            <BirdIcon />
+          </Link>
+          
         </div>
         <div className="home-left-middle">
-          <LeftHome />
+        <Link  className="left-home-anchor" to="/home">
+            <LeftHome />
+        </Link>
+          
           <Explore />
           <Notification />
           <Messages />
           <Bookmarks />
           <Lists />
-          <Profile />
+          <Link className="left-profile-anchor" to="/profile">
+            <Profile />
+          </Link>
           <More />
           <TweetButton />
         </div>

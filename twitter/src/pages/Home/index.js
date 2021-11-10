@@ -11,6 +11,9 @@ import { Lists } from "./components/Lists";
 import { Profile } from "./components/Profile";
 import { More } from "./components/More";
 import { TweetButton } from "./components/TweetButton";
+import { BottomProfile } from "./components/BottomProfile";
+import { BottomPopUp } from "./components/BottomPopUp";
+import {BottomAnchorPopUp} from "./components/BottomAnchorPopUp"
 
 ///////////////Middle//////////////////
 import { MiddleHome } from "./components/MiddleHome";
@@ -23,8 +26,7 @@ import { Search } from "./components/Search";
 import { Trends } from "./components/Trends";
 import { WhoToFollow } from "./components/WhoToFollow";
 import { HomeFooter } from "./components/HomeFooter";
-import { BottomProfile } from "./components/BottomProfile";
-import { BottomPopUp } from "./components/BottomPopUp";
+
 
 
 export {
@@ -47,7 +49,9 @@ export {
   WhoToFollow,
   HomeFooter,
   BottomProfile,
-  BottomPopUp
+  BottomPopUp,
+  BottomAnchorPopUp
+  
   
 };
 
