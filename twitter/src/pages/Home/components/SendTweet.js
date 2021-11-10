@@ -7,7 +7,7 @@ import { ref } from "../../../Firebase/Firebase";
 
 export function SendTweet() {
 
-  const [user,setUser]=useState([])
+  const [user,setUser]=useState(null)
 
   const getUser=()=>{
     ref.onSnapshot((querySnapshot)=>{
@@ -15,15 +15,22 @@ export function SendTweet() {
       querySnapshot.forEach((doc)=>{
         items.push(doc.data())
       })
-      setUser(items)
+      setTimeout(setUser(items),10)
+      
     })
   }
   useEffect(()=>{
     getUser()
     
   },[])
+
+  if(!user)
+  {
+    return (
+    <div className="send-tweet"><div className="loader"></div></div>)
+  }
+ 
   return (
-    
     <div className="send-tweet">
       {user.map(user=>   <><div className="middle-picture-what-happen">
         <div className="middle-image-container"><img src={user.image} className="middle-image"></img></div>

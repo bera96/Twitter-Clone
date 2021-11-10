@@ -4,7 +4,7 @@ import { trends } from "../../../Firebase/Firebase";
 
 
 export function Trends() {
-  const [trend,setTrend]=useState([])
+  const [trend,setTrend]=useState(null)
 
   const getTrends=()=>{
     trends.onSnapshot((querySnapshot)=>{
@@ -12,13 +12,19 @@ export function Trends() {
       querySnapshot.forEach((doc)=>{
         items.push(doc.data())
       })
-      setTrend(items)
+      setTimeout(setTrend(items),10)
+      
     })
   }
   useEffect(()=>{
     getTrends()
     
   },[])
+
+  if(!trend){
+    return <div className="loader"></div>
+  }
+
   
   return (
     <div className="trends">

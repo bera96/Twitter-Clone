@@ -6,7 +6,7 @@ import { Button } from "../../Login/Components";
 
 export function WhoToFollow() {
 
-  const [toFollow,setToFollow]=useState([])
+  const [toFollow,setToFollow]=useState(null)
 
   const getToFollow=()=>{
     toFollowRef.onSnapshot((querySnapshot)=>{
@@ -14,13 +14,23 @@ export function WhoToFollow() {
       querySnapshot.forEach((doc)=>{
         items.push(doc.data())
       })
-      setToFollow(items)
+      setTimeout(()=> setToFollow(items),10)
+     
     })
   }
   useEffect(()=>{
     getToFollow()
     
   },[])
+
+  if(!toFollow)
+  {
+    
+    return (<div className="who-to-follow">
+    <div className="loader"></div>
+    </div>)
+  }
+ 
   
   return <div className="who-to-follow">
               <span className="who-to-follow-header">Who to follow</span>
