@@ -1,4 +1,4 @@
-import React, { useState,useEffect, useContext } from "react";
+import React, { useState,useEffect } from "react";
 import { BiDotsHorizontalRounded } from "react-icons/bi";
 import { ref } from "../../../Firebase/Firebase";
 
@@ -7,7 +7,7 @@ export function BottomProfile() {
 
 
   
-  const [user,setUser]=useState([])
+  const [user,setUser]=useState(null)
 
   const getUser=()=>{
     ref.onSnapshot((querySnapshot)=>{
@@ -23,6 +23,10 @@ export function BottomProfile() {
     
   },[])  
 
+  if(!user)
+  {
+    return (<div className="bottom-profile"><div className="loader"></div></div>)
+  }
   return (
     <div className="bottom-profile">
       {" "}

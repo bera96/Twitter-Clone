@@ -10,7 +10,7 @@ export function SendTweet({setTweet,tweet}) {
 
 
   const [user,setUser]=useState(null)
-  console.log(tweet)
+  
 
   const onChangeHandler=(e)=>{
       setTweet(e.target.value)
@@ -44,7 +44,7 @@ export function SendTweet({setTweet,tweet}) {
       nickName:"@janedoe",
       date:date
     }).then(() => {
-      console.log("Document successfully written!");
+      
   }).catch((error) => {
     console.error("Error writing document: ", error);
 });

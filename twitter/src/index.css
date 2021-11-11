@@ -7,7 +7,7 @@
   background: black;
 }
 .home-page {
-
+  position: relative;
   display: flex;
   color: white;
   background-color: #000000;
@@ -500,7 +500,111 @@
   display: flex;
   padding: 1rem;
 }
+.tweet-text{
+  color: rgb(217, 217, 217);
+  font-size: 15px;
+}
+.tweet-popup{
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  background: black;
+  z-index: 99999;
+  border-radius: 1rem;
+  top: 8rem;
+  width: 37rem;
+  left: 40rem;
+  height: 18rem;
+ 
+}
+.tweet-popup-textarea{
+  background: black;
+  outline: none;
+  color: rgb(217, 217, 217);
+  font-size: 18px;
+  padding-left: 0.5rem;
+  padding-top: 1rem;
+  resize: none;
+  border: none;
+  width: 32rem;
+  
 
+}
+.bottom-profile {
+  display: flex;
+  position: relative;
+}
+.bottom-profile .loader{
+  position: absolute;
+  top: 1rem;
+  right: 5rem;
+  border: 4px solid rgb(47, 51, 54);/* Light grey */
+  border-top: 4px solid #3498db; /* Blue */
+  border-radius: 50%;
+  width: 15px;
+  height: 15px;
+  animation: spin 1s linear infinite;
+}
+.tweet-popup-bottom{
+  display: flex;
+  align-items: center;
+  flex: 1;
+  border-top: 1px solid rgb(47, 51, 54);
+  margin:0 1rem;
+}
+.tweet-popup-send{
+  margin-left: auto;
+  padding-right: 1rem;
+}
+.tweet-popup-text{
+  display: flex;
+  padding-left: 1rem;
+  align-items: center;
+  flex: 2;
+}
+.tweet-popup-text img{
+  width: 3rem;
+  border-radius: 1.5rem;
+}
+.tweet-popup-icons{
+  display: flex;
+}
+.tweet-popup-icons i{
+  color: rgb(29,155,240);
+  font-size: 15px;
+}
+.tweet-send{
+  background: #1d9bf0;
+  padding: 0.7rem 1.5rem;
+  border-radius: 1.5rem;
+  font-weight: 700;
+  font-size: 15px;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+.icon-image{
+  padding-left: 4rem;
+}
+.icon-photo{
+  padding-left: 1rem;
+}
+.icon-smile{
+  padding-left: 1rem;
+}
+.icon-calendar{
+  padding-left: 1rem;
+}
+.close-container{
+  height: 3.5rem;
+  border-bottom: 1px solid rgb(47, 51, 54);
+}
+.close-container i{
+  padding-top: 1rem;
+  padding-left: 1rem;
+  font-size: 17px;
+  cursor: pointer;
+}
 .middle-picture-what-happen {
   display: flex;
 }
@@ -517,9 +621,7 @@
   justify-content: flex-start;
   color: #3083d7;
 }
-.bottom-profile {
-  display: flex;
-}
+
 
 .bottom-profile-icon {
   margin-left: 2rem;

@@ -14,6 +14,8 @@ import { TweetButton } from "./components/TweetButton";
 import { BottomProfile } from "./components/BottomProfile";
 import { BottomPopUp } from "./components/BottomPopUp";
 import {BottomAnchorPopUp} from "./components/BottomAnchorPopUp"
+import {TweetPopUp} from './components/TweetPopUp'
+import {HomeLayout} from './components/HomeLayout'
 
 ///////////////Middle//////////////////
 import { MiddleHome } from "./components/MiddleHome";
@@ -50,7 +52,9 @@ export {
   HomeFooter,
   BottomProfile,
   BottomPopUp,
-  BottomAnchorPopUp
+  BottomAnchorPopUp,
+  TweetPopUp,
+  HomeLayout
   
   
 };

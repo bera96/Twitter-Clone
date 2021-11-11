@@ -1,29 +1,39 @@
 import React from "react";
 import { LeftSide } from "./LeftSide";
 import { RightSide } from "./RightSide";
-import { ProfileCard, ProfileTweet, ProfileTweets } from "./index";
+import { ProfileCard, ProfileTweets } from "./index";
+import { Redirect } from "react-router";
 
 export default function PProfile() {
-  return (
-    <div className="home-page">
-      <LeftSide />
-      <div className="profile-middle">
-        <ProfileCard />
-        <ProfileTweets />
 
-        <ProfileTweets />
-
-        <ProfileTweets />
-
-        <ProfileTweets />
-
-        <ProfileTweets />
-
-        <ProfileTweets />
-
-        <ProfileTweets />
+  if(localStorage.getItem("uid")!=null)
+  {
+    return (
+      <div className="home-page">
+        <LeftSide />
+        <div className="profile-middle">
+          <ProfileCard />
+          <ProfileTweets />
+  
+          <ProfileTweets />
+  
+          <ProfileTweets />
+  
+          <ProfileTweets />
+  
+          <ProfileTweets />
+  
+          <ProfileTweets />
+  
+          <ProfileTweets />
+        </div>
+        <RightSide />
       </div>
-      <RightSide />
-    </div>
-  );
+    )
+  }
+  else
+  {
+    return <Redirect to="/login"/>
+  }
+  
 }

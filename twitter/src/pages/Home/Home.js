@@ -4,13 +4,15 @@ import MiddleSide from "./MiddleSide";
 import RightSide from "./RightSide";
 import { useDispatch, useSelector } from "react-redux";
 import { logoutInitiate } from "../../redux/actions/user";
-import { useHistory } from "react-router";
-import { BottomAnchorPopUp, BottomPopUp } from ".";
+import { Redirect, useHistory } from "react-router";
+import { BottomAnchorPopUp, BottomPopUp, HomeLayout, TweetPopUp } from ".";
+
 
 
 function Home() {
   const [clicked, setClicked] = useState(false);
   const [clickedAnchor,setClickedAnchor]=useState(false)
+  const [clickedTweet,setClickedTweet]=useState(false)
   const [tweet,setTweet]=useState(null)
 
 
@@ -18,7 +20,8 @@ function Home() {
   const dispatch = useDispatch();
   const history = useHistory();
   const handleAuth = () => {
-    if (currentUser) {
+    if (!currentUser) {
+      console.log(currentUser)
       dispatch(logoutInitiate());
       localStorage.removeItem("uid");
       history.push("/");
@@ -43,23 +46,46 @@ function Home() {
     {
       setClickedAnchor(false)
     }
+    if(e.target.className==="tweet-button")
+    {
+      setClickedTweet(true)
+    }
+   else if(e.target.className==="fas fa-times")
+   {
+     setClickedTweet(false)
+   }
   };
   
+  
+  if(localStorage.getItem("uid")!=null)
+  
+  {
+    return (
+      <>
+      {clickedTweet?(<HomeLayout setClickedTweet={setClickedTweet}/>):(null)}
+      <div onClick={onClickHandler} className="home-page">
+        
+          {clicked?( <BottomPopUp handleAuth={handleAuth} />  ):(null)}
+         
+          <LeftSide/>
+          {clickedTweet?(<TweetPopUp tweet={tweet} setTweet={setTweet} setClickedTweet={setClickedTweet}/>):(null)}
+          
 
-
+          <MiddleSide tweet={tweet} setTweet={setTweet} />
+          <RightSide />
+          {clickedAnchor?(<BottomAnchorPopUp />):(null)}
+          
+      </div>
+      </>
+    );
+  }
+  else
+  {
+    return <Redirect to="/login"/>
+  }
 
   
-  return (
-    <div onClick={onClickHandler} className="home-page">
-        {clicked?( <BottomPopUp handleAuth={handleAuth} />  ):(null)}
-       
-        <LeftSide/>
-        <MiddleSide tweet={tweet} setTweet={setTweet} />
-        <RightSide />
-        {clickedAnchor?(<BottomAnchorPopUp />):(null)}
-        
-    </div>
-  );
+  
 }
 
 export default Home;
