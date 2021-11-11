@@ -5,6 +5,7 @@ import 'firebase/firestore'
 
 
 
+
 const firebaseConfig = {
   apiKey: "AIzaSyBxHG5L_FaaSzqghkX6E1lAANwJiq46d68",
   authDomain: "twitter-clone-production-1004c.firebaseapp.com",
@@ -17,6 +18,7 @@ const firebaseConfig = {
 firebase.initializeApp(firebaseConfig)
 
 const auth=firebase.auth()
+const db=firebase.firestore()
 
 const googleAuthProvider = new firebase.auth.GoogleAuthProvider()
 const emailAuthProvider= new firebase.auth.EmailAuthProvider()
@@ -24,8 +26,11 @@ const emailAuthProvider= new firebase.auth.EmailAuthProvider()
 const ref=firebase.firestore().collection("User")
 const toFollowRef=firebase.firestore().collection("toFollow")
 const trends=firebase.firestore().collection("trends")
+const tweets=firebase.firestore().collection("Tweets")
 
-export {auth,googleAuthProvider,emailAuthProvider,ref,toFollowRef,trends}
+
+
+export {auth,googleAuthProvider,emailAuthProvider,ref,toFollowRef,trends,db,tweets}
 
 
 

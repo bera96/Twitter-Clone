@@ -11,6 +11,7 @@ import { BottomAnchorPopUp, BottomPopUp } from ".";
 function Home() {
   const [clicked, setClicked] = useState(false);
   const [clickedAnchor,setClickedAnchor]=useState(false)
+  const [tweet,setTweet]=useState(null)
 
 
   const { currentUser } = useSelector((state) => state.user);
@@ -53,7 +54,7 @@ function Home() {
         {clicked?( <BottomPopUp handleAuth={handleAuth} />  ):(null)}
        
         <LeftSide/>
-        <MiddleSide />
+        <MiddleSide tweet={tweet} setTweet={setTweet} />
         <RightSide />
         {clickedAnchor?(<BottomAnchorPopUp />):(null)}
         

@@ -215,6 +215,24 @@
   border: 1px solid rgb(47, 51, 54);
   padding: 1rem;
 }
+.tweet-input{
+  margin: 1rem;
+  background-color: black;
+  width: 40rem;
+  border: none;
+  font-size: 20px;
+  cursor: text;
+  color: white;
+  resize: none;
+  
+
+}
+.tweet-input:focus{
+  outline: none;
+}
+.tweet-input::placeholder{
+  font-size: 20px;
+}
 .send-tweet .loader{
   position: absolute;
   top: 0.3rem;
@@ -401,12 +419,19 @@
 }
 
 .middle-tweet-button {
-  background-color: #1d9bf0;
+  background-color:rgb(29, 155, 240);
   border-radius: 50px;
+  color: white;
+  font-size: 15px;
   width: 80px;
   height: 35px;
   align-items: center;
-  display: flex;
+  border: none;
+  cursor: pointer;
+  transition: .3s;
+}
+.middle-tweet-button:hover{
+  background:  rgb(26, 140, 216);
 }
 
 .middle-picture-what-happen {
