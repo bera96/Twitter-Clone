@@ -160,13 +160,15 @@
 
 .tweet-button {
   background-color: #1d9bf0;
+  padding-top: 1rem !important;
   border-radius: 50px;
-  padding: 1rem 5rem;
- 
+  padding: 1rem 5.5rem;
   text-align: center;
   font-size: 17px;
   font-weight: 700;
+  
 }
+
 .bottom-profile {
   border: 1px solid black;
   padding: 0.45rem 1rem;
@@ -209,6 +211,7 @@
   display: flex;
   flex-direction: column;
   align-items: flex-end;
+  padding-right: 2.4rem;
 }
 .send-tweet {
   position: relative;
@@ -268,13 +271,66 @@
   font-size: 20px;
 }
 
-.tweets {
-  border: 1px solid black;
-  padding: 1rem;
+.tweet-from{
+  display: flex;
 }
 .tweet {
   border: 1px solid black;
   padding: 1rem;
+}
+.tweet-right{
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  padding-left: 1rem;
+}
+.tweet-user{
+  color: rgb(217, 217, 217);
+  font-size: 15px;
+  font-weight: 700;
+}
+.tweet-nickname{
+  color: rgb(108, 115, 125);
+  font-size: 15px;
+  padding-left: 0.25rem;
+}
+
+.retweet{
+  margin-left: 8rem;
+}
+.heart{
+  margin-left: 8rem;
+}
+.upload{
+  margin-left: 8rem;
+}
+.tweet-dot{
+  color: rgb(108, 115, 125);
+  font-size: 15px;
+  padding-left: 0.25rem;
+  padding-right:0.25rem ;
+  line-height: 10px;
+}
+.tweet-date{
+  color: rgb(108, 115, 125);
+  font-size: 15px;
+}
+.tweet-more{
+  margin-left: auto;
+}
+.tweet-more i{
+  color: rgb(108, 115, 125);
+  font-size: 15px;
+}
+.tweet-column{
+  padding-top: 0.80rem;
+  display: flex;
+  
+}
+.tweet-column i{
+  color: rgb(108, 115, 125);
+  font-size: 15px;
+  cursor: pointer;
 }
 .search {
   margin-top: 0.5rem;
@@ -282,6 +338,7 @@
   align-items: center;
   width: 5rem;
 }
+
 
 .search input {
   border: 1px solid rgb(32, 35, 39, 1);
@@ -299,7 +356,7 @@
   height: 400px;
   margin-top: 1rem;
 
-  margin-left: 6rem;
+  margin-left: 2rem;
 }
 
 .who-to-follow {
@@ -310,7 +367,7 @@
   height: 300px;
   border-radius: 20px;
   margin-top: 1rem;
-  margin-left: 6rem;
+  margin-left: 2rem;
   padding-top: 1rem;
 }
 .who-to-follow-header{
@@ -374,7 +431,7 @@
   border: 1px solid black;
   padding-top: 1rem;
   width: 350px;
-  margin-left: 6rem;
+  margin-left: 2rem;
   text-align: left;
 }
 .home-footer-list{
@@ -416,6 +473,7 @@
   display: flex;
   flex-direction: column;
   flex: 2;
+  width: 10rem;
 }
 
 .middle-tweet-button {
@@ -432,6 +490,15 @@
 }
 .middle-tweet-button:hover{
   background:  rgb(26, 140, 216);
+}
+.tweet-image img{
+  width: 3rem;
+  border-radius: 1.5rem;
+}
+.tweet-container{
+  border:1px solid rgb(47, 51, 54);
+  display: flex;
+  padding: 1rem;
 }
 
 .middle-picture-what-happen {
@@ -498,7 +565,7 @@
   border-radius: 50px;
   background-color: rgb(32, 35, 39, 1);
   outline: none;
-  margin-left: 6rem;
+  margin-left: 2rem;
   
 }
 .chat-search-text::placeholder{
@@ -579,7 +646,7 @@
   position: absolute;
   display: flex;
   text-align: left;
-  left: 7rem;
+  left: 3rem;
   top: 0.9rem;
   font-size: 14px;
   background: none;
@@ -686,10 +753,7 @@
   background-color: gray;
   margin: 1rem;
 }
-.tweet-column {
-  display: flex;
-  flex-direction: column;
-}
+
 .user-bottom-image {
   width: 3rem;
   border-radius: 3rem;

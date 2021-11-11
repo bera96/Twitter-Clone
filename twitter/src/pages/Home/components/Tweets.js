@@ -28,6 +28,24 @@ export function Tweets() {
   
   return (<div className="tweets">
             {tweet.map(tweet=>
-                      <div>{tweet.twit}</div>)}
+                      <div className="tweet-container">
+                        <div className="tweet-image"><img src={tweet.image}></img></div>
+                        <div className="tweet-right">
+                        <div className="tweet-from">
+                          <div className="tweet-user">{tweet.name+" "+tweet.lastName}</div>
+                          <div className="tweet-nickname">{tweet.nickName}</div>
+                          <div className="tweet-dot">.</div>
+                          <div className="tweet-date">{tweet.date}</div>
+                          <div className="tweet-more"><i className="fas fa-ellipsis-h"></i></div>
+                        </div>
+                        <div className="tweet-text">{tweet.twit}</div>
+                        <div className="tweet-column">
+                          <div><i className="far fa-comment"></i></div>
+                          <div className="retweet"><i className="fas fa-retweet"></i></div>
+                          <div className="heart"><i className="far fa-heart"></i></div>
+                          <div className="upload"><i className="fas fa-upload"></i></div>
+                        </div>
+                        </div>
+                      </div>)}
   </div>)
 }
