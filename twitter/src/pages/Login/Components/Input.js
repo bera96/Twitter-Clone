@@ -1,7 +1,13 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 
 function Input({ as, type, text, name,signUpName,signUpEmail, ...props }) {
+  
 
+  const writeError=(errorMessage)=>{
+      
+  
+    return errorMessage
+}
 
     const getError=(errorType)=>{
 
@@ -17,42 +23,16 @@ function Input({ as, type, text, name,signUpName,signUpEmail, ...props }) {
               
         }
     }
-    const writeError=(errorMessage)=>{
-        
-            return errorMessage
-    }
+ 
+  
 
-//   useEffect(() => {
-//     const signUpForm = document.querySelector(".signup-form");
-//     const input = document.querySelector(".signup-input");
-//     const constrain = document.querySelector(".input-name-constrain");
-//     const innerText = document.querySelector(".input-inner-text");
 
-//     signUpForm.addEventListener("click", (e) => {
-//       if (e.target === input) {
-//         constrain.classList.add("active");
-//         innerText.style.top = "0.3rem";
-//         innerText.style.fontSize = "12px";
-//       } else {
-//         if (e.target.value !== input) {
-//           innerText.style.top = "";
-//           innerText.style.fontSize = "";
-//         }
-
-//         if (e.target.value != "") {
-//           innerText.style.top = "0.3rem";
-//           innerText.style.fontSize = "12px";
-//         }
-//         constrain.classList.remove("active");
-//       }
-//     });
-//   }, []);
 
   if (as === "signup-input") {
     return (
       <div className="signup-input-container">
         <span className="input-name-constrain">0 / 50</span>
-        {signUpName==""?<span className={`"${getError({error:"name"})} error"`}>{"Adın nedir ?"}</span>:null}
+        {signUpName==""?<span className={`"${getError({error:"name"})} error"`}>{writeError()}</span>:null}
        
         <input className={as} type={type} maxLength="50"{...props}></input>
         

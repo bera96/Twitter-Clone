@@ -22,6 +22,7 @@ import { MiddleHome } from "./components/MiddleHome";
 import { SendTweet } from "./components/SendTweet";
 import { Tweets } from "./components/Tweets";
 import { Tweet } from "./components/Tweet";
+import {Error} from './components/Error'
 
 ////////////////////Right///////////////////
 import { Search } from "./components/Search";
@@ -54,7 +55,8 @@ export {
   BottomPopUp,
   BottomAnchorPopUp,
   TweetPopUp,
-  HomeLayout
+  HomeLayout,
+  Error
   
   
 };

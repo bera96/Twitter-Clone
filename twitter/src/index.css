@@ -8,10 +8,11 @@
 }
 .home-page {
   position: relative;
+  margin: 0 auto;
   display: flex;
   color: white;
   background-color: #000000;
-  padding-left: 20rem;
+  padding-left: 22rem;
 }
 
 .left-side {
@@ -170,9 +171,11 @@
 }
 
 .bottom-profile {
+  display: flex;
+  position: relative;
   border: 1px solid black;
-  padding: 0.45rem 1rem;
-  margin-top: 14.1rem;
+  padding: 0.20rem 2rem;
+  margin-top: 18rem;
   cursor: pointer;
   transition: 0.3s;
 }
@@ -186,8 +189,9 @@
   text-align: center;
 }
 .bottom-profile-popup {
-  position: absolute;
-  top: 38rem;
+  position: fixed;
+  z-index: 9;
+  top: 40rem;
   left: 16rem;
   height: 12rem;
   width: 20rem;
@@ -212,6 +216,9 @@
   flex-direction: column;
   align-items: flex-end;
   padding-right: 2.4rem;
+  user-select: none;
+  left: 18.5rem;
+  position: fixed;
 }
 .send-tweet {
   position: relative;
@@ -238,8 +245,8 @@
 }
 .send-tweet .loader{
   position: absolute;
-  top: 0.3rem;
-  left: 21rem;
+  top: 0.5rem;
+  left: 17.5rem;
   border: 4px solid rgb(47, 51, 54);/* Light grey */
   border-top: 4px solid #3498db; /* Blue */
   border-radius: 50%;
@@ -268,7 +275,18 @@
   border-right: 1px solid rgb(47, 51, 54);
   border-left: 1px solid rgb(47, 51, 54);
   padding: 1rem;
+  border-bottom: 1px solid rgb(47, 51, 54);
   font-size: 20px;
+  position: fixed;
+  top: 0;
+  width: 35.85rem;
+  background-color: black;
+  z-index: 9;
+}
+.empty-error{
+  color: red;
+  font-size: 14px;
+ 
 }
 
 .tweet-from{
@@ -470,10 +488,12 @@
 }
 
 .bb {
+  margin-top: 3rem;
   display: flex;
   flex-direction: column;
-  flex: 2;
-  width: 10rem;
+  width: 38rem;
+  margin-left: 14rem;
+  
 }
 
 .middle-tweet-button {
@@ -505,7 +525,7 @@
   font-size: 15px;
 }
 .tweet-popup{
-  position: absolute;
+  position: fixed;
   display: flex;
   flex-direction: column;
   background: black;
@@ -530,10 +550,7 @@
   
 
 }
-.bottom-profile {
-  display: flex;
-  position: relative;
-}
+
 .bottom-profile .loader{
   position: absolute;
   top: 1rem;
@@ -640,7 +657,7 @@
   flex-direction: column;
   top: 41rem;
   left: 85rem;
-  position: absolute;
+  position: fixed;
   border: 1px solid rgba(0, 0, 0, 0.1);
   box-shadow: rgb(255 255 255 / 20%) 0px 0px 15px,
     rgb(255 255 255 / 15%) 0px 0px 3px 1px;
@@ -657,7 +674,8 @@
 .ll {
   display: flex;
   flex-direction: column;
-  flex: 2;
+  right: 21rem;
+  position: fixed;
 }
 
 .chat-search-text {
@@ -762,6 +780,7 @@
 .profile-middle {
   display: flex;
   flex-direction: column;
+  margin-left: 13rem;
 }
 .profile-card {
   display: flex;

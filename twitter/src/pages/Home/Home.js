@@ -13,7 +13,7 @@ function Home() {
   const [clicked, setClicked] = useState(false);
   const [clickedAnchor,setClickedAnchor]=useState(false)
   const [clickedTweet,setClickedTweet]=useState(false)
-  const [tweet,setTweet]=useState(null)
+  const [tweet,setTweet]=useState("")
 
 
   const { currentUser } = useSelector((state) => state.user);
