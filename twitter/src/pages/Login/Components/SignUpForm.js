@@ -43,6 +43,8 @@ function SignUpForm({setRegister,setLayOut}) {
         }
         dispatch(registerInitiate(email,password,displayName))
         setState({email:"",displayName:"",password:"",confirmPassword:""})
+        setRegister(false)
+        setLayOut(false)
     }
     
 
