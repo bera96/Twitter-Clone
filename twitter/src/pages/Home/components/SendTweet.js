@@ -49,6 +49,7 @@ export function SendTweet({setTweet,tweet}) {
           date:date
         }).then(() => {
           setTweet("")
+          const emptyvalue=tweet
       }).catch((error) => {
         console.error("Error writing document: ", error);
       });
@@ -76,7 +77,7 @@ export function SendTweet({setTweet,tweet}) {
      
       {user.map(user=>   <><div className="middle-picture-what-happen">
         <div className="middle-image-container"><img src={user.image} className="middle-image"></img></div>
-        <textarea onChange={onChangeHandler} className="tweet-input" placeholder="What's happening?"></textarea>
+        <textarea onChange={onChangeHandler} value={tweet} className="tweet-input" placeholder="What's happening?"></textarea>
        
       </div> {error?(<Error as="empty-error"/>):(null)}<div className="middle-icons-tweet-button">
           <div className="middle-icon">
